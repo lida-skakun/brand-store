@@ -13,9 +13,10 @@ This is the frontend for a small online store built with React and TypeScript.
 ## 📂 Project Structure
 
 ```
-/online-store-frontend
+/brand-store-frontend
 │── /public            # Static files
 │── /src
+│   │── /styles        # SCSS files
 │   │── /assets        # Icons, images, fonts
 │   │── /components    # Reusable UI components
 │   │── /features      # Core features (Cart, Products, Auth)

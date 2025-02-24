@@ -1,3 +1,5 @@
+@use "../../styles/index" as *;
+
 .headerMenu {
   color: #070707;
   display: grid;
@@ -13,12 +15,7 @@
   .headerMenu_button {
     grid-row: 1;
     grid-column: 5;
-    border-radius: 20px;
-    background-color: #000000;
-    color: #FFFFFF;
-    padding: 10px;
-    max-height: 60px;
-    cursor: pointer;
+    @include button-styles;
   }
 }
 

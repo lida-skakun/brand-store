@@ -1,0 +1,13 @@
+@mixin button-styles() {
+  border-radius: 20px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  max-height: 60px;
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    background: linear-gradient(to bottom, rgb(95, 95, 95), #000000);
+  }
+}

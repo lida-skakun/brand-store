@@ -1,0 +1,39 @@
+@use "../../styles/index" as *;
+
+.signUp_container {
+  background-image: url("../../assets/images/clothes-on-hanger.jpg");
+  background-size: cover;
+  padding: 50px 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h2 {
+    color: #ffffff;
+    text-shadow: #000000 1px 0 10px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+  }
+  .signUp_form {
+    text-align: center;
+
+    input {
+      border: none;
+      border-radius: 20px;
+      padding: 10px 20px;
+      margin-right: 20px;
+    }
+
+    button {
+      @include button-styles;
+      min-width: 100px;
+      font-size: 14px;
+    }
+  }
+  p {
+    text-shadow: #000000 1px 0 30px;
+    font-size: 20px;
+  }
+}
