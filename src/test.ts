@@ -1,1 +1,0 @@
-console.log('Testing our first TypeScript file');

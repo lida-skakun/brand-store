@@ -1,0 +1,40 @@
+.headerMenu {
+  color: #070707;
+  display: grid;
+  padding: 50px;
+  align-items: center;
+
+  h5 {
+    font-family: "Tomorrow", serif;
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .headerMenu_button {
+    grid-row: 1;
+    grid-column: 5;
+    border-radius: 20px;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px;
+    max-height: 60px;
+    cursor: pointer;
+  }
+}
+
+.headerMenu_navigation {
+    grid-row: 1;
+    grid-column: 2/4;
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: space-around;
+    font-weight: 400;
+    li {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

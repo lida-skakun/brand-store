@@ -1,0 +1,98 @@
+.main-cover {
+  h1 {
+    color: #000000;
+    font-size: 55px;
+    text-align: center;
+    font-weight: 500;
+    margin: 50px 80px 20px 50px;
+  }
+  .main-cover_description {
+    color: #909090;
+    text-align: center;
+    margin: 0 80px;
+  }
+
+  .main-cover_baner {
+    position: relative;
+    margin: 50px;
+    display: grid;
+    gap: 20px;
+    align-items: center;
+
+    .main-cover_baner_img {
+      grid-row: 1;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    span {
+      position: absolute;
+      text-shadow: #000000 1px 0 10px;
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .main-cover_baner_img:first-child {
+      grid-column: 1;
+      img {
+        border-radius: 15px 15px 15px 100px;
+      }
+      span {
+        top: 10%;
+        left: 10%;
+      }
+    }
+
+    .main-cover_baner_img:nth-child(2) {
+      grid-column: 2/4;
+      img {
+        border-radius: 100px 15px 100px 15px;
+      }
+      span {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+    }
+
+    .main-cover_baner_img:last-child {
+      grid-column: 4;
+      img {
+        border-radius: 15px;
+      }
+      span {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+    }
+    
+    h6 {
+      font-size: 30px;
+      font-weight: 600;
+      margin: 0;
+    }
+  }
+  .main-cover_desription {
+    background-color: #F6F6F6;
+    color: #000000;
+    padding: 30px 100px;
+    font-size: 36px;
+    line-height: 2;
+    text-align: center;
+
+    img {
+      max-height: 44px;
+      border-radius: 20px;
+      padding: 0 10px;
+      vertical-align: middle;
+    }
+  }
+}
