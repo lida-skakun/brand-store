@@ -5,6 +5,7 @@ import womanInPinkDress from "../../assets/images/woman-in-pink-dress.jpg";
 import womanInOliweDress from "../../assets/images/woman-in-oliwe-dress.jpg";
 import womanInWhiteDress from "../../assets/images/woman-in-white-dress.jpg";
 import SignUp from "../sign-up/sign-up";
+import NewCollection from "../new-collection/new-collection";
 import "./main-cover.scss";
 
 function MainCover() {
@@ -67,6 +68,7 @@ function MainCover() {
           <b>formal</b>.
         </p>
       </div>
+      <NewCollection />
       <SignUp />
     </div>
   );

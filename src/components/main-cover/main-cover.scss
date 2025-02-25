@@ -1,15 +1,12 @@
+@use "../../styles/index" as *;
+
 .main-cover {
   h1 {
-    color: #000000;
-    font-size: 55px;
-    text-align: center;
-    font-weight: 500;
+    @include general-header;
     margin: 50px 80px 20px 50px;
   }
   .main-cover_description {
-    color: #909090;
-    text-align: center;
-    margin: 0 80px;
+    @include general-description;
   }
 
   .main-cover_baner {
@@ -30,11 +27,7 @@
     }
 
     span {
-      position: absolute;
-      text-shadow: #000000 1px 0 10px;
-      p {
-        font-size: 14px;
-      }
+      @include text-on-img();
     }
 
     .main-cover_baner_img:first-child {

@@ -1,0 +1,62 @@
+@use "../../styles/index" as *;
+
+.newCollection {
+  h1 {
+    @include general-header;
+  }
+  p {
+    @include general-description;
+  }
+  .newCollection_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+   // display: flex;
+    //justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin: 20px;
+      position: relative;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 30px;
+    }
+
+    span {
+      h6 {
+        font-size: 30px;
+        font-weight: 600;
+        margin: 0;
+      }
+      p {
+        margin: 0 auto;
+      }
+      @include text-on-img();
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .newCollection_section {
+      h5,
+      p {
+        margin: 0 auto;
+        color: #000000;
+        font-weight: 500;
+        text-align: left;
+      }
+
+      h5 {
+        font-size: 16px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
