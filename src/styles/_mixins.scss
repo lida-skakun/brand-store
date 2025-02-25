@@ -11,3 +11,24 @@
     background: linear-gradient(to bottom, rgb(95, 95, 95), #000000);
   }
 }
+
+@mixin general-header() {
+  color: #000000;
+  font-size: 55px;
+  text-align: center;
+  font-weight: 500;
+}
+
+@mixin general-description() {
+  color: #909090;
+  text-align: center;
+  margin: 0 80px;
+}
+
+@mixin text-on-img() {
+  position: absolute;
+  text-shadow: #000000 1px 0 10px;
+  p {
+    font-size: 14px;
+  }
+}
