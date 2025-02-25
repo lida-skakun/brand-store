@@ -1,0 +1,26 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .footer_navigation {
+        ul {
+            display: flex;
+            color: #000000;
+            list-style: none;
+            font-size: 12px;
+        }   
+    }
+    .footer--listItems {
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .footer_iconList {
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        img {
+            max-width: 20px;
+        }
+    }
+}
