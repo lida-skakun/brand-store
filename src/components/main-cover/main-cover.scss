@@ -2,8 +2,8 @@
 
 .main-cover {
   h1 {
-    @include general-header;
     margin: 50px 80px 20px 50px;
+    @include general-header;
   }
   .main-cover_description {
     @include general-description;
@@ -15,6 +15,9 @@
     display: grid;
     gap: 20px;
     align-items: center;
+    @include respond-to(xSmall) {
+      margin: 10px;
+    }
 
     .main-cover_baner_img {
       grid-row: 1;
@@ -66,26 +69,51 @@
         text-align: center;
       }
     }
-    
+
     h6 {
       font-size: 30px;
       font-weight: 600;
       margin: 0;
+      @include respond-to(medium) {
+        font-size: 22px;
+      }
+      @include respond-to(small) {
+        font-size: 14px;
+      }
     }
   }
   .main-cover_desription {
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
     color: #000000;
     padding: 30px 100px;
     font-size: 36px;
     line-height: 2;
     text-align: center;
-
+    @include respond-to(medium) {
+      font-size: 26px;
+    }
+    @include respond-to(small) {
+      font-size: 20px;
+      padding: 20px 50px;
+    }
+    @include respond-to(medium) {
+      font-size: 16px;
+      padding: 10px 30px;
+    }
     img {
       max-height: 44px;
       border-radius: 20px;
       padding: 0 10px;
       vertical-align: middle;
+      @include respond-to(medium) {
+        max-height: 38px;
+      }
+      @include respond-to(small) {
+        max-height: 30px;
+      }
+      @include respond-to(small) {
+        max-height: 26px;
+      }
     }
   }
 }

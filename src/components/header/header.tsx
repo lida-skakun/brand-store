@@ -1,8 +1,8 @@
 import "./header.scss"
 
-export function Header() {
+function Header() {
     return (
-        <div className="headerMenu">
+        <header className="headerMenu">
             <h5>LINEN LIFE</h5>
             <nav className="headerMenu_navigation">
                 <ul>
@@ -13,6 +13,8 @@ export function Header() {
                 </ul>
             </nav>
             <button className="headerMenu_button">Log in</button>
-        </div>
+        </header>
     )
 }
+
+export default Header

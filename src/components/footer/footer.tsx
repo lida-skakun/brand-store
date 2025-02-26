@@ -3,9 +3,9 @@ import instagramIcon from "../../assets/icons/instagram.svg";
 import pinterestIcon from "../../assets/icons/pinterest.svg";
 import "./footer.scss";
 
-export function Footer() {
+function Footer() {
   return (
-    <div className="footer">
+    <footer className="footer">
       <nav className="footer_navigation">
         <ul>
           <li className="footer--listItems">&copy; 2025 LINEN LIFE</li>
@@ -25,6 +25,8 @@ export function Footer() {
           <img src={pinterestIcon} alt="pinterest" />
         </li>
       </ul>
-    </div>
+    </footer>
   );
 }
+
+export default Footer;

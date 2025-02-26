@@ -5,4 +5,8 @@
   margin: 0 auto;
   border: 50px solid #E8E8E8;
   background-color: #FFFFFF;
+  @include respond-to(xSmall) {
+  border: 20px solid #E8E8E8;
+
+  }
 }

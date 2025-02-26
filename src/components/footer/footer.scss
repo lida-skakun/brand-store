@@ -1,26 +1,46 @@
+@use "../../styles/index" as *;
+
 .footer {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
     align-items: center;
+    justify-content: center;
 
     .footer_navigation {
+        grid-column: 1;
+        grid-row: 1;
         ul {
             display: flex;
             color: #000000;
             list-style: none;
             font-size: 12px;
+            padding: 0;
+            @include respond-to(small) {
+             justify-items: center;
+             margin-bottom: 0;
+            }
         }   
     }
     .footer--listItems {
         margin-right: 20px;
         cursor: pointer;
+        @include respond-to(small) {
+            font-size: 10px;
+        }
     }
     .footer_iconList {
+        grid-column: 2;
+        grid-row: 1;
         display: flex;
         list-style: none;
-        justify-content: space-around;
+        justify-content: end;
+        padding: 0;
         img {
             max-width: 20px;
+        }
+        @include respond-to(xSmall) {
+        grid-column: 1/3;
+        justify-content: center;
+        grid-row: 2;
         }
     }
 }

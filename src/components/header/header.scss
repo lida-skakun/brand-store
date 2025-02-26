@@ -5,6 +5,12 @@
   display: grid;
   padding: 50px;
   align-items: center;
+  @include respond-to(medium) {
+    padding-bottom: 0;
+  }
+  @include respond-to(xSmall) {
+    padding: 5px 10px;
+  }
 
   h5 {
     font-family: "Tomorrow", serif;
@@ -20,18 +26,26 @@
 }
 
 .headerMenu_navigation {
-    grid-row: 1;
-    grid-column: 2/4;
+  grid-row: 1;
+  grid-column: 2/4;
   ul {
     display: flex;
     list-style: none;
     padding: 0;
     justify-content: space-around;
     font-weight: 400;
+    font-size: 16px;
     li {
       &:hover {
         cursor: pointer;
       }
     }
+    @include respond-to(medium) {
+      font-size: 12px;
+    }
+  }
+  @include respond-to(small) {
+    grid-row: 2;
+    grid-column: 1/6;
   }
 }
