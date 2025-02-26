@@ -1,4 +1,3 @@
-import clothesOnHanger from "../../assets/images/clothes-on-hanger.jpg"
 import "./sign-up.scss";
 
 function SignUp() {
