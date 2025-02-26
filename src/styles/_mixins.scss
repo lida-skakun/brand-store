@@ -1,3 +1,17 @@
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == xSmall {
+      @media (max-width: 576px) { @content; }
+  } @else if $breakpoint == small {
+      @media (max-width: 768px) { @content; }
+  } @else if $breakpoint == medium {
+      @media (max-width: 992px) { @content; }
+  } @else if $breakpoint == large {
+      @media (max-width: 1200px) { @content; }
+  } @else if $breakpoint == extraLarge {
+      @media (min-width: 1200px) { @content; }
+  }
+}
+
 @mixin button-styles() {
   border-radius: 20px;
   background-color: #000000;
@@ -14,15 +28,32 @@
 
 @mixin general-header() {
   color: #000000;
-  font-size: 55px;
+  font-size: 54px;
   text-align: center;
   font-weight: 500;
+  @include respond-to(medium) {
+    font-size: 44px;
+  }
+  @include respond-to(small) {
+    font-size: 32px;
+    margin-top: 20px;
+  }
+  @include respond-to(xSmall) {
+    font-size: 26px;
+    margin: 10px 30px;
+  }
 }
 
 @mixin general-description() {
   color: #909090;
   text-align: center;
   margin: 0 80px;
+  @include respond-to(small) {
+    font-size: 12px;
+  }
+  @include respond-to(xSmall) {
+    margin: 0px 30px;
+  }
 }
 
 @mixin text-on-img() {
@@ -30,5 +61,13 @@
   text-shadow: #000000 1px 0 10px;
   p {
     font-size: 14px;
+    @include respond-to(medium) {
+      display: none;
+    }
+  }
+  @include respond-to(small) {
+    display: none;
   }
 }
+
+
